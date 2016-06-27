@@ -1,0 +1,57 @@
+<ul>
+  {% for page in site.pages %}
+    {% if page.categories == 'docs' and page.tags == 'general' %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/settings/settings.html">Settings</a>
+    {% include fetch_settings.html %}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/tools/tools.html">Tools</a>
+    {% include fetch_tools.html %}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/generic/generic.html">Generic</a>
+    {% include fetch_generic.html %}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/elements/elements.html">Elements</a>
+    {% include fetch_elements.html %}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/objects/objects.html">Objects</a>
+    {% include fetch_objects.html %}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/components/components.html">Components</a>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="/docs/utilities/utilities.html">Utilities</a>
+    {% include fetch_utilities.html %}
+  </li>
+</ul>
