@@ -6,6 +6,7 @@ description: >
   UI projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://inuitcss.com" # the base hostname & protocol for your site
+github: "https://github.com/inuitcss/inuitcss"
 
 # Build settings
 markdown: kramdown

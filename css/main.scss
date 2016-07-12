@@ -9,9 +9,57 @@ $unit: 24px;
 $unit-small: $unit / 2;
 $unit-large: $unit * 2;
 
+$color-primary:   #4a8ec2;
+$color-secondary: #2f4054;
+
+
+
+
+
+* {
+  margin:  0;
+  padding: 0;
+}
+
 html {
   font-family: $font;
 }
+
+pre, code {
+  font-family: monospace, monospace;
+}
+
+a {
+  font-weight: bold;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+}
+
+
+
+
+
+.c-page-head {
+  overflow: hidden;
+}
+
+  .c-page-head__logo {
+    float: left;
+  }
+
+  .c-page-head__nav {
+    float: right;
+  }
+
+
+
+
 
 .c-logo {
   display: inline-block;
@@ -51,6 +99,11 @@ html {
     padding-right: $unit-small;
   }
 
+  .c-lockup__text {
+    font-weight: normal;
+    color: $color-secondary;
+  }
+
 
 
 
@@ -60,8 +113,16 @@ html {
   padding: $unit;
 }
 
+.c-band--small {
+  padding: $unit-small;
+}
+
+.c-band--center {
+  text-align: center;
+}
+
 .c-band--primary {
-  background-color: #4a8ec2;
+  background-color: $color-primary;
 
   &,
   a {
@@ -71,7 +132,7 @@ html {
 }
 
 .c-band--secondary {
-  background-color: #2f4054;
+  background-color: $color-secondary;
 
   &,
   a {
