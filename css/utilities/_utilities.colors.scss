@@ -23,12 +23,19 @@ $color-types: (
   '-border': 'border-color',
 );
 
+$color-states: (
+  null: null,
+  ':hover': '\\:hover',
+);
+
 @each $name, $hex in $color-utils {
   @each $alias, $type in $color-types {
+    @each $state, $escape in $color-states {
 
-    .u-color-#{$name}#{$alias} {
-      #{$type}: $hex !important;
+      .u-color-#{$name}#{$alias}#{$escape}#{$state} {
+        #{$type}: $hex !important;
+      }
+
     }
-
   }
 }

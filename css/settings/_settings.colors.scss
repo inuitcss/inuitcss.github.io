@@ -10,7 +10,7 @@ $color-primary-shadow:      darken( $color-primary, 10%);
 
 $color-secondary: #2f4054;
 $color-secondary-highlight: lighten($color-secondary, 10%);
-$color-secondary-shadow:    darken($color-secondary, 10%);
+$color-secondary-shadow:    darken( $color-secondary, 10%);
 
 $color-grey-light:          desaturate($color-primary, 100%);
 $color-grey-dark:           desaturate($color-secondary, 100%);
