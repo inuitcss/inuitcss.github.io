@@ -1,0 +1,27 @@
+{
+  "name": "inuitcss.com",
+  "version": "0.1.0",
+  "description": "inuitcss documentation site",
+  "main": "n/a",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inuitcss/inuitcss.github.io.git"
+  },
+  "keywords": [
+    "inuitcss",
+    "documentation",
+    "docs"
+  ],
+  "author": "Harry Roberts <csswizardry@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/inuitcss/inuitcss.github.io/issues"
+  },
+  "homepage": "https://github.com/inuitcss/inuitcss.github.io#readme",
+  "dependencies": {
+    "inuitcss": "latest"
+  }
+}
