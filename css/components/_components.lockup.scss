@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #LOCKUP
+   ========================================================================== */
+
+.c-lockup {
+  display: table;
+}
+
+  .c-lockup__img,
+  .c-lockup__text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .c-lockup__img {
+    padding-right: $inuit-global-spacing-unit-small;
+  }
+
+  .c-lockup__text {
+    font-weight: normal;
+    color: $color-secondary;
+  }
+

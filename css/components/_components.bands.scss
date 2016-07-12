@@ -1,0 +1,52 @@
+/* ==========================================================================
+   #BANDS
+   ========================================================================== */
+
+/**
+ * Long-form comment.
+ *
+ * This spans multiple lines and is also constrained to no longer than 80
+ * characters in width.
+ *
+ * 1. Provide line-comments like this.
+ */
+
+.c-band {
+  display: block;
+  padding: $inuit-global-spacing-unit;
+}
+
+.c-band--small {
+  padding: $inuit-global-spacing-unit-small;
+}
+
+.c-band--center {
+  text-align: center;
+}
+
+.c-band--primary {
+  background-color: $color-band-primary-bg;
+
+  &,
+  a {
+    color: $color-band-primary;
+  }
+
+}
+
+.c-band--secondary {
+  background-color: $color-band-secondary-bg;
+
+  &,
+  a {
+    color: $color-band-secondary;
+  }
+
+}
+
+
+
+
+
+/* Sub-title
+   ========================================================================== */

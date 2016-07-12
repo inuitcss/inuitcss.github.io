@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/inuitcss/inuitcss.github.io#readme",
   "dependencies": {
-    "inuitcss": "latest"
+    "inuitcss": "latest",
+    "sass-mq": "^3.2.9"
   }
 }

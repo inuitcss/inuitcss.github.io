@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+// Import inuitcss’ own page-level rules into this file.
+@import "../../node_modules/inuitcss/elements/elements.page";
+
+/**
+ * 1. Use the system font everywhere.
+ */
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+               Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe
+               UI Symbol";
+}
+
