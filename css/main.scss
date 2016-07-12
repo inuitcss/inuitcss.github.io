@@ -140,3 +140,18 @@ a {
   }
 
 }
+
+
+
+
+
+.c-title-huge {
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 1.125;
+
+  &.will-grow {
+    font-size: calc( 24px + (64 - 24) * (100vw - 480px) / (1200 - 480)  );
+  }
+
+}
