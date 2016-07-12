@@ -73,10 +73,15 @@
 
 }
 
+
+/**
+ * 1. Artificially increase specificity to combat leaky `.band--* a {}` rules.
+ */
+
 .c-btn--tertiary {
   background-color: $color-btn-tertiary-bg;
 
-  &#{&},
+  &#{&}, /* [1] */
   &:hover,
   &:active,
   &:focus {

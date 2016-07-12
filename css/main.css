@@ -1371,6 +1371,9 @@ a:hover, a:focus {
   background-color: #1d2733;
 }
 
+/**
+ * 1. Artificially increase specificity to combat leaky `.band--* a {}` rules.
+ */
 .c-btn--tertiary {
   background-color: #fff;
 }
