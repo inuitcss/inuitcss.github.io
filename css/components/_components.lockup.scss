@@ -17,7 +17,7 @@
   }
 
   .c-lockup__text {
-    font-weight: normal;
-    color: $color-secondary;
+    font-weight: bold;
+    @include font-size(12px);
   }
 

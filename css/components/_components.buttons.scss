@@ -38,56 +38,55 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: #4a8ec2;
+  background-color: $color-btn-bg;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none; /* [4] */
-    color: #fff;
+    color: $color-btn;
   }
 
   &:hover,
   &:focus {
-    background-color: #3774a2;
+    background-color: $color-btn-hover-bg;
   }
 
 }
 
 .c-btn--secondary {
-  background-color: #2f4054;
+  background-color: $color-btn-secondary-bg;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #fff;
+    color: $color-btn-secondary;
   }
 
   &:hover,
   &:focus {
-    background-color: #1d2733;
+    background-color: $color-btn-secondary-hover-bg;
   }
 
 }
 
 .c-btn--tertiary {
-  background-color: #fff;
-  color: #4a8ec2;
+  background-color: $color-btn-tertiary-bg;
 
-  &,
+  &#{&},
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #4a8ec2;
+    color: $color-btn-tertiary;
   }
 
   &:hover,
   &:focus {
-    color: #3774a2;
+    color: $color-btn-tertiary;
   }
 
 }
@@ -140,31 +139,31 @@ $btn-ghost-border-width: 2px;
   }
 
   &.c-btn--primary {
-    color: #4a8ec2;
+    color: $color-btn-bg;
 
     &:hover,
     &:focus {
-      color: #3774a2;
+      color: $color-btn-hover-bg;
     }
 
   }
 
   &.c-btn--secondary {
-    color: #2f4054;
+    color: $color-btn-secondary-bg;
 
     &:hover,
     &:focus {
-      color: #1d2733;
+      color: $color-btn-secondary-hover-bg;
     }
 
   }
 
   &.c-btn--tertiary {
-    color: #fff;
+    color: $color-btn-tertiary-bg;
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: $color-btn-tertiary-hover-bg;
     }
 
   }

@@ -12,5 +12,9 @@ $unit-large:  $inuit-global-spacing-unit-large;
 $unit-huge:   $inuit-global-spacing-unit-huge;
 
 @mixin clearfix($args...) {
-  @inuit-clearfix($args);
+  @inuit-clearfix($args...);
+}
+
+@mixin font-size($args...) {
+  @include inuit-font-size($args...);
 }

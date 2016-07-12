@@ -1373,14 +1373,13 @@ a:hover, a:focus {
 
 .c-btn--tertiary {
   background-color: #fff;
-  color: #4a8ec2;
 }
-.c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
+.c-btn--tertiary.c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
   text-decoration: none;
   color: #4a8ec2;
 }
 .c-btn--tertiary:hover, .c-btn--tertiary:focus {
-  color: #3774a2;
+  color: #4a8ec2;
 }
 
 /* Size variants
@@ -1434,7 +1433,7 @@ a:hover, a:focus {
    #PAGE-HEAD
    ========================================================================== */
 .c-page-head {
-  @inuit-clearfix ($args);
+  @inuit-clearfix ($args...);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -1465,8 +1464,9 @@ a:hover, a:focus {
 }
 
 .c-lockup__text {
-  font-weight: normal;
-  color: #2f4054;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 2;
 }
 
 /* ==========================================================================
