@@ -592,38 +592,39 @@ html {
  * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
  */
 h1 {
-  font-size: 2.25rem;
-  line-height: 1.333333333;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h2 {
-  font-size: 1.75rem;
-  line-height: 1.714285714;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h4 {
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h5 {
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h6 {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 200;
+  font-weight: 500;
   letter-spacing: 0.033333333em;
+  color: #2f4054;
 }
 
 /* ==========================================================================
@@ -1572,7 +1573,11 @@ a:hover, a:focus {
   padding: 24px;
   background-color: #4a8ec2;
   color: #fff;
-  border-radius: 3px;
+}
+
+.c-bio-mini__title {
+  margin-bottom: 0;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -2794,33 +2799,33 @@ a:hover, a:focus {
  *
  */
 .u-h1 {
-  font-size: 2.25rem;
-  line-height: 1.333333333;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 .u-h2 {
-  font-size: 1.75rem;
-  line-height: 1.714285714;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 .u-h3 {
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 .u-h4 {
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 .u-h5 {
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 .u-h6 {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.375rem;
+  line-height: 1.090909091;
 }
 
 /* ==========================================================================
