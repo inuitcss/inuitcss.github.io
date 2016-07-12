@@ -62,6 +62,7 @@
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
+ * Avatars..............Suite of different styles of avatar.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -1534,6 +1535,25 @@ a:hover, a:focus {
 .c-band--secondary,
 .c-band--secondary a {
   color: #fff;
+}
+
+/* ==========================================================================
+   #AVATARS
+   ========================================================================== */
+.c-avatar {
+  border-radius: 100%;
+  width: 128px;
+  height: 128px;
+}
+
+.c-avatar--small {
+  width: 64px;
+  height: 64px;
+}
+
+.c-avatar--large {
+  width: 64px;
+  height: 64px;
 }
 
 /* ==========================================================================

@@ -64,6 +64,7 @@
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
+ * Avatars..............Suite of different styles of avatar.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -143,6 +144,7 @@
 @import "components/components.lockup";
 @import "components/components.logo";
 @import "components/components.bands";
+@import "components/components.avatars";
 
 
 
