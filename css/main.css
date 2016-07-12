@@ -63,6 +63,7 @@
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
+ * Bio-mini.............Miniature bios as used on the Team page.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -582,6 +583,9 @@ html {
 /* ==========================================================================
    #HEADINGS
    ========================================================================== */
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
 /**
  * Simple default styles for headings 1 through 6. Anything more opinionated
  * than simple font-size changes should likely be applied via classes (see:
@@ -615,6 +619,11 @@ h5 {
 h6 {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  letter-spacing: 0.033333333em;
 }
 
 /* ==========================================================================
@@ -1554,6 +1563,16 @@ a:hover, a:focus {
 .c-avatar--large {
   width: 64px;
   height: 64px;
+}
+
+/* ==========================================================================
+   #BIO-MINI
+   ========================================================================== */
+.c-bio-mini {
+  padding: 24px;
+  background-color: #4a8ec2;
+  color: #fff;
+  border-radius: 3px;
 }
 
 /* ==========================================================================

@@ -65,6 +65,7 @@
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
+ * Bio-mini.............Miniature bios as used on the Team page.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -110,7 +111,7 @@
 
 // ELEMENTS
 @import "elements/elements.page";
-@import "../node_modules/inuitcss/elements/elements.headings";
+@import "elements/elements.headings";
 @import "../node_modules/inuitcss/elements/elements.images";
 @import "../node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.links";
@@ -145,6 +146,7 @@
 @import "components/components.logo";
 @import "components/components.bands";
 @import "components/components.avatars";
+@import "components/components.bio-mini";
 
 
 
