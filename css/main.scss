@@ -7,6 +7,7 @@ $font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, 
 
 $unit: 24px;
 $unit-small: $unit / 2;
+$unit-large: $unit * 2;
 
 html {
   font-family: $font;
@@ -32,6 +33,10 @@ html {
 
 }
 
+
+
+
+
 .c-lockup {
   display: table;
 }
@@ -45,3 +50,32 @@ html {
   .c-lockup__img {
     padding-right: $unit-small;
   }
+
+
+
+
+
+.c-band {
+  display: block;
+  padding: $unit;
+}
+
+.c-band--primary {
+  background-color: #4a8ec2;
+
+  &,
+  a {
+    color: #fff;
+  }
+
+}
+
+.c-band--secondary {
+  background-color: #2f4054;
+
+  &,
+  a {
+    color: #fff;
+  }
+
+}
