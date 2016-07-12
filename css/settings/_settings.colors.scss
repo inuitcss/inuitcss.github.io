@@ -4,16 +4,26 @@
 
 // Literal palette
 
-$color-primary:             #4a8ec2;
-$color-primary-highlight:   lighten($color-primary, 10%);
-$color-primary-shadow:      darken( $color-primary, 10%);
+$color-primary:               #4a8ec2;
+$color-secondary:             #2f4054;
+$color-white:                 #fff;
 
-$color-secondary: #2f4054;
-$color-secondary-highlight: lighten($color-secondary, 10%);
-$color-secondary-shadow:    darken( $color-secondary, 10%);
+$colors: (
+  'pale':                 $color-white,
+  'primary':                      $color-primary,
+  'primary-highlight':    lighten($color-primary, 10%),
+  'primary-shadow':       darken( $color-primary, 10%),
+  'secondary':                    $color-secondary,
+  'secondary-highlight':  lighten($color-secondary, 10%),
+  'secondary-shadow':     darken( $color-secondary, 10%),
+  'grey-light':           desaturate($color-primary, 100%),
+  'grey-dark':            desaturate($color-secondary, 100%),
+);
 
-$color-grey-light:          desaturate($color-primary, 100%);
-$color-grey-dark:           desaturate($color-secondary, 100%);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
 
 
 
@@ -21,19 +31,19 @@ $color-grey-dark:           desaturate($color-secondary, 100%);
 
 // Semantic color variables are daisy-chained onto their literal names.
 
-$color-link:        $color-primary;
-$color-link-hover:  $color-primary-shadow;
+$color-link:                    color(primary);
+$color-link-hover:              color(primary-shadow);
 
-$color-btn:                     #fff;
-$color-btn-bg:                  $color-primary;
-$color-btn-hover-bg:            $color-primary-shadow;
+$color-btn:                     color(pale);
+$color-btn-bg:                  color(primary);
+$color-btn-hover-bg:            color(primary-shadow);
 
-$color-btn-secondary:           #fff;
-$color-btn-secondary-bg:        $color-secondary;
-$color-btn-secondary-hover-bg:  $color-secondary-shadow;
+$color-btn-secondary:           color(pale);
+$color-btn-secondary-bg:        color(secondary);
+$color-btn-secondary-hover-bg:  color(secondary-shadow);
 
-$color-band-primary:            #fff;
-$color-band-primary-bg:         $color-primary;
+$color-band-primary:            color(pale);
+$color-band-primary-bg:         color(primary);
 
-$color-band-secondary:          #fff;
-$color-band-secondary-bg:       $color-secondary;
+$color-band-secondary:          color(pale);
+$color-band-secondary-bg:       color(secondary);

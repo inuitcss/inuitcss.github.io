@@ -6,36 +6,18 @@
  * Attach our colour palette to some utility classes.
  */
 
-$color-utils: (
-  'primary': $color-primary,
-  'primary-highlight': $color-primary-highlight,
-  'primary-shadow': $color-primary-shadow,
-  'secondary': $color-secondary,
-  'secondary-highlight': $color-secondary-highlight,
-  'secondary-shadow': $color-secondary-shadow,
-  'grey-light': $color-grey-light,
-  'grey-dark': $color-grey-dark,
-);
+@each $key, $value in $colors {
 
-$color-types: (
-  null: 'color',
-  '-bg': 'background-color',
-  '-border': 'border-color',
-);
-
-$color-states: (
-  null: null,
-  ':hover': '\\:hover',
-);
-
-@each $name, $hex in $color-utils {
-  @each $alias, $type in $color-types {
-    @each $state, $escape in $color-states {
-
-      .u-color-#{$name}#{$alias}#{$escape}#{$state} {
-        #{$type}: $hex !important;
-      }
-
-    }
+  .u-color-#{$key} {
+    color: $value !important;
   }
+
+  .u-color-#{$key}-bg {
+    background-color: $value !important;
+  }
+
+  .u-color-#{$key}-border {
+    border-color: $value !important;
+  }
+
 }
