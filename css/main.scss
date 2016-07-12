@@ -59,8 +59,7 @@
  * Crop.................Provide a cropping context for media (images, etc.).
  *
  * COMPONENTS
- * Buttons..............An example button component, and how it fits into the
- *                      inuitcss framework.
+ * Buttons..............inuitcss-branded buttons.
  * Page-head............Site’s main mage header.
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
@@ -138,7 +137,7 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "../node_modules/inuitcss/components/example.components.buttons";
+@import "components/components.buttons";
 @import "components/components.page-head";
 @import "components/components.lockup";
 @import "components/components.logo";
