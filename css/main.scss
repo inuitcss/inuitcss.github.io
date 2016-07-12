@@ -74,6 +74,7 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  *                      classes..
  * Hide.................Helper classes to hide content
+ * Colors...............Our colour palette against some utility classes.
  */
 
 // SETTINGS
@@ -154,3 +155,4 @@
 @import "../node_modules/inuitcss/utilities/utilities.spacing";
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.colors";

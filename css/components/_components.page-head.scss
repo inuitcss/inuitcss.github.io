@@ -3,7 +3,9 @@
    ========================================================================== */
 
 .c-page-head {
-  overflow: hidden;
+  @include clearfix();
+  padding-top:    $unit;
+  padding-bottom: $unit;
 }
 
   .c-page-head__logo {

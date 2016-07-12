@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/**
+ * Attach our colour palette to some utility classes.
+ */
+
+$color-utils: (
+  'primary': $color-primary,
+  'primary-highlight': $color-primary-highlight,
+  'primary-shadow': $color-primary-shadow,
+  'secondary': $color-secondary,
+  'secondary-highlight': $color-secondary-highlight,
+  'secondary-shadow': $color-secondary-shadow,
+  'grey-light': $color-grey-light,
+  'grey-dark': $color-grey-dark,
+);
+
+$color-types: (
+  null: 'color',
+  '-bg': 'background-color',
+  '-border': 'border-color',
+);
+
+@each $name, $hex in $color-utils {
+  @each $alias, $type in $color-types {
+
+    .u-color-#{$name}#{$alias} {
+      #{$type}: $hex !important;
+    }
+
+  }
+}

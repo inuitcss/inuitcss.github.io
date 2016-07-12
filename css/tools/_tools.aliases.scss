@@ -2,4 +2,15 @@
 //   #ALIASES
 //   ======================================================================== */
 
-$unit: $inuit-global-spacing-unit;
+// Remap a bunch of inuitcss’ namespaced variables and mixins onto much shorter
+// ones.
+
+$unit:        $inuit-global-spacing-unit;
+$unit-tiny:   $inuit-global-spacing-unit-tiny;
+$unit-small:  $inuit-global-spacing-unit-small;
+$unit-large:  $inuit-global-spacing-unit-large;
+$unit-huge:   $inuit-global-spacing-unit-huge;
+
+@mixin clearfix($args...) {
+  @inuit-clearfix($args);
+}

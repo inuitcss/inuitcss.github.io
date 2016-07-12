@@ -72,6 +72,7 @@
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
  *                      classes..
  * Hide.................Helper classes to hide content
+ * Colors...............Our colour palette against some utility classes.
  */
 /* ==========================================================================
    #BOX-SIZING
@@ -659,7 +660,6 @@ table {
    #LINKS
    ========================================================================== */
 a {
-  font-weight: bold;
   color: #4a8ec2;
   text-decoration: none;
 }
@@ -1434,7 +1434,9 @@ a:hover, a:focus {
    #PAGE-HEAD
    ========================================================================== */
 .c-page-head {
-  overflow: hidden;
+  @inuit-clearfix ($args);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .c-page-head__logo {
@@ -3137,6 +3139,108 @@ a:hover, a:focus {
  */
 .u-hidden {
   display: none !important;
+}
+
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+/**
+ * Attach our colour palette to some utility classes.
+ */
+.u-color-primary {
+  color: #4a8ec2 !important;
+}
+
+.u-color-primary-bg {
+  background-color: #4a8ec2 !important;
+}
+
+.u-color-primary-border {
+  border-color: #4a8ec2 !important;
+}
+
+.u-color-primary-highlight {
+  color: #70a6cf !important;
+}
+
+.u-color-primary-highlight-bg {
+  background-color: #70a6cf !important;
+}
+
+.u-color-primary-highlight-border {
+  border-color: #70a6cf !important;
+}
+
+.u-color-primary-shadow {
+  color: #3774a2 !important;
+}
+
+.u-color-primary-shadow-bg {
+  background-color: #3774a2 !important;
+}
+
+.u-color-primary-shadow-border {
+  border-color: #3774a2 !important;
+}
+
+.u-color-secondary {
+  color: #2f4054 !important;
+}
+
+.u-color-secondary-bg {
+  background-color: #2f4054 !important;
+}
+
+.u-color-secondary-border {
+  border-color: #2f4054 !important;
+}
+
+.u-color-secondary-highlight {
+  color: #415975 !important;
+}
+
+.u-color-secondary-highlight-bg {
+  background-color: #415975 !important;
+}
+
+.u-color-secondary-highlight-border {
+  border-color: #415975 !important;
+}
+
+.u-color-secondary-shadow {
+  color: #1d2733 !important;
+}
+
+.u-color-secondary-shadow-bg {
+  background-color: #1d2733 !important;
+}
+
+.u-color-secondary-shadow-border {
+  border-color: #1d2733 !important;
+}
+
+.u-color-grey-light {
+  color: #868686 !important;
+}
+
+.u-color-grey-light-bg {
+  background-color: #868686 !important;
+}
+
+.u-color-grey-light-border {
+  border-color: #868686 !important;
+}
+
+.u-color-grey-dark {
+  color: #424242 !important;
+}
+
+.u-color-grey-dark-bg {
+  background-color: #424242 !important;
+}
+
+.u-color-grey-dark-border {
+  border-color: #424242 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

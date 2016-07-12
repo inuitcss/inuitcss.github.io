@@ -2,85 +2,92 @@
 layout: default
 ---
 
+
 <div class="c-band  c-band--center  c-band--primary">
   <h1 class="c-title-huge  will-grow">{{ site.description }}</h1>
 </div>
 
 <div class="c-band  c-band--center  c-band--secondary  c-band--small">
-<pre><code>$ npm install --save inuitcss</code></pre>
+  <pre><code>$ npm install --save inuitcss</code></pre>
 </div>
 
-<h1><a href="/">Home</a></h1>
+<h1 class="u-color-primary">Foo bar baz</h1>
 
-<p>
-  <a href="#0" class="c-btn  c-btn--primary  c-btn--large">Button</a>
-  <a href="#0" class="c-btn  c-btn--primary  c-btn--large  c-btn--ghost">Button</a>
-  <a href="#0" class="c-btn  c-btn--primary">Button</a>
-  <a href="#0" class="c-btn  c-btn--primary  c-btn--ghost">Button</a>
-  <a href="#0" class="c-btn  c-btn--primary  c-btn--small">Button</a>
-  <a href="#0" class="c-btn  c-btn--primary  c-btn--small  c-btn--ghost">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary  c-btn--small">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary  c-btn--small  c-btn--ghost">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary  c-btn--ghost">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary  c-btn--large">Button</a>
-  <a href="#0" class="c-btn  c-btn--secondary  c-btn--large  c-btn--ghost">Button</a>
-</p>
+<main class="o-wrapper">
 
+  <h1><a href="/">Home</a></h1>
 
-
-
-
-<hr />
+  <p>
+    <a href="#0" class="c-btn  c-btn--primary  c-btn--large">Button</a>
+    <a href="#0" class="c-btn  c-btn--primary  c-btn--large  c-btn--ghost">Button</a>
+    <a href="#0" class="c-btn  c-btn--primary">Button</a>
+    <a href="#0" class="c-btn  c-btn--primary  c-btn--ghost">Button</a>
+    <a href="#0" class="c-btn  c-btn--primary  c-btn--small">Button</a>
+    <a href="#0" class="c-btn  c-btn--primary  c-btn--small  c-btn--ghost">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary  c-btn--small">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary  c-btn--small  c-btn--ghost">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary  c-btn--ghost">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary  c-btn--large">Button</a>
+    <a href="#0" class="c-btn  c-btn--secondary  c-btn--large  c-btn--ghost">Button</a>
+  </p>
 
 
 
 
 
-<h2><a href="/about">About</a></h2>
-
-<ul>
-  <li>
-    <a href="/about/team.html">Team</a>
-  </li>
-</ul>
+  <hr />
 
 
 
 
 
-<hr />
+  <h2><a href="/about">About</a></h2>
 
-
-
-
-
-<h2><a href="/docs/">Docs</a></h2>
-<ul>
-  {% for doc in site.docs %}
+  <ul>
     <li>
-      <a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a>
+      <a href="/about/team.html">Team</a>
     </li>
-  {% endfor %}
-</ul>
+  </ul>
 
 
 
 
 
-<hr />
+  <hr />
 
 
 
 
 
-<h2>Blog</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h2><a href="/docs/">Docs</a></h2>
+  <ul>
+    {% for doc in site.docs %}
+      <li>
+        <a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+
+
+
+
+  <hr />
+
+
+
+
+
+  <h2>Blog</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</main>
