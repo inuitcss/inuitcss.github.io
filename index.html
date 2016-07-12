@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <h1><a href="/">Home</a></h1>
 
 
@@ -14,6 +15,7 @@ layout: default
 
 
 <h1><a href="/about">About</a></h1>
+
 <ul>
   <li>
     <a href="/about/team.html">Team</a>
@@ -31,7 +33,13 @@ layout: default
 
 
 <h1><a href="/docs/">Docs</a></h1>
-{% include fetch_all.html %}
+<ul>
+  {% for doc in site.docs %}
+    <li>
+      <a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 
 
