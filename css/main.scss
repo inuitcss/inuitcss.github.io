@@ -3,3 +3,45 @@
 ---
 @charset "utf-8";
 
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$unit: 24px;
+$unit-small: $unit / 2;
+
+html {
+  font-family: $font;
+}
+
+.c-logo {
+  display: inline-block;
+  width:  48px;
+  height: 48px;
+  background-image: url(/assets/img/sprites/sprite-logo.png);
+
+  @media screen and (min-width: 45em) {
+    background-position: -48px 0;
+    width:  72px;
+    height: 72px;
+  }
+
+  @media screen and (min-width: 64em) {
+    background-position: 0 -72px;
+    width:  220px;
+    height: 105px;
+  }
+
+}
+
+.c-lockup {
+  display: table;
+}
+
+  .c-lockup__img,
+  .c-lockup__text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .c-lockup__img {
+    padding-right: $unit-small;
+  }
