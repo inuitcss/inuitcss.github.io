@@ -1,12 +1,24 @@
 ---
 layout: default
 ---
-<article>
+<div class="o-wrapper">
+  <div class="o-layout  o-layout--reverse">
 
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
+    <article class="o-layout__item  u-8/12@md  u-9/12@xl">
 
-  {{ content }}
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
 
-</article>
+      {{ content }}
+
+    </article>
+
+    <aside class="o-layout__item  u-4/12@md  u-3/12@xl">
+      {% if page.has-sub-nav == true %}
+        {% include sub-nav.html for=page.sub-nav %}
+      {% endif %}
+    </aside>
+
+  </div>
+</div>

@@ -64,6 +64,7 @@
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
+ * Nav-secondary........Sidebar-style navigation
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -90,6 +91,13 @@
 @import "../node_modules/inuitcss/tools/tools.functions";
 @import "../node_modules/inuitcss/tools/tools.mixins";
 @import "../node_modules/inuitcss/tools/tools.widths";
+
+$mq-breakpoints: (
+  sm: 320px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
 @import "../node_modules/sass-mq/mq";
 @import "tools/tools.aliases";
 
@@ -143,6 +151,7 @@
 @import "components/components.lockup";
 @import "components/components.logo";
 @import "components/components.bands";
+@import "components/components.nav-secondary";
 
 
 
@@ -150,7 +159,7 @@
 
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
-@import "../node_modules/inuitcss/utilities/example.utilities.widths";
+@import "utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
 @import "../node_modules/inuitcss/utilities/utilities.spacing";
 @import "../node_modules/inuitcss/utilities/utilities.print";

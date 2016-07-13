@@ -13,11 +13,18 @@
 
 .c-band {
   display: block;
-  padding: $inuit-global-spacing-unit;
+  padding-top:    $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
 }
 
 .c-band--small {
-  padding: $inuit-global-spacing-unit-small;
+  padding-top:    $inuit-global-spacing-unit-small;
+  padding-bottom: $inuit-global-spacing-unit-small;
 }
 
 .c-band--center {

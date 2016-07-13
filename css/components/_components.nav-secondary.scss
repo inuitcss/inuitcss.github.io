@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #NAV-SECONDARY
+   ========================================================================== */
+
+.c-nav-secondary {
+  @include font-size(12px);
+  background-color: color(secondary);
+
+  @include mq($from: md) {
+    @include font-size($inuit-global-font-size);
+  }
+
+  &,
+  a {
+    color: color(pale)
+  }
+
+}
+
+    .c-nav-secondary__link {
+      display: block;
+      padding: $unit-tiny;
+      border-bottom: 1px solid color(secondary-highlight);
+
+      @include mq($from: md) {
+        padding: $unit-small;
+      }
+
+    }
