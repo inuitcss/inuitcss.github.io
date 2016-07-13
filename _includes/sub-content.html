@@ -1,5 +1,5 @@
 <ul class="o-list-bare  c-nav-secondary">
-{% if page.sub-nav == 'about' %}
+{% if page.sub-content == 'about' %}
 
   <li class="o-list-bare__item  c-nav-secondary__item"><a href="/about/" class="c-nav-secondary__link">About</a></li>
   <li class="o-list-bare__item  c-nav-secondary__item"><a href="/about/manifesto/" class="c-nav-secondary__link">Manifesto</a></li>
@@ -7,7 +7,7 @@
 
 {% endif %}
 
-{% if page.sub-nav == 'docs' %}
+{% if page.sub-content == 'docs' %}
 
     {% for doc in site.docs %}
       <li class="o-list-bare__item  c-nav-secondary__item">

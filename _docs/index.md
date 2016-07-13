@@ -2,8 +2,8 @@
 layout: page
 title:  "Docs"
 page-class: c-page--docs
-has-sub-nav: true
-sub-nav: docs
+has-sub-content: true
+sub-content: docs
 permalink: /docs/
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum reiciendis provident dignissimos repudiandae qui ratione nam dicta officia, quidem illo non id laboriosam, eum recusandae assumenda repellat autem. Suscipit.

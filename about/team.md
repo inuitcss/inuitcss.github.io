@@ -2,8 +2,8 @@
 layout: page
 title: Team
 page-class: c-page--about
-has-sub-nav: true
-sub-nav: about
+has-sub-content: true
+sub-content: about
 ---
 
 <ul class="o-layout">
