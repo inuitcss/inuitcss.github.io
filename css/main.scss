@@ -60,11 +60,11 @@
  *
  * COMPONENTS
  * Buttons..............inuitcss-branded buttons.
+ * Bands................Horizontal content bands.
  * Page-head............Site’s main page header.
  * Page-foot............Site’s main page footer.
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
- * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
  * Bio-mini.............Miniature bios as used on the Team page.
  * Nav-primary..........Site’s main nav.
@@ -154,11 +154,11 @@ $mq-breakpoints: (
 //
 // Build and include your project’s UI Compoments here.
 @import "components/components.buttons";
+@import "components/components.bands";
 @import "components/components.page-head";
 @import "components/components.page-foot";
 @import "components/components.lockup";
 @import "components/components.logo";
-@import "components/components.bands";
 @import "components/components.avatars";
 @import "components/components.bio-mini";
 @import "components/components.nav-primary";

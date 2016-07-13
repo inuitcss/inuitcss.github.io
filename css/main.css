@@ -58,11 +58,11 @@
  *
  * COMPONENTS
  * Buttons..............inuitcss-branded buttons.
+ * Bands................Horizontal content bands.
  * Page-head............Site’s main page header.
  * Page-foot............Site’s main page footer.
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
- * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
  * Bio-mini.............Miniature bios as used on the Team page.
  * Nav-primary..........Site’s main nav.
@@ -1454,6 +1454,51 @@ a:hover, a:focus {
 }
 
 /* ==========================================================================
+   #BANDS
+   ========================================================================== */
+/**
+ * Long-form comment.
+ *
+ * This spans multiple lines and is also constrained to no longer than 80
+ * characters in width.
+ *
+ * 1. Provide line-comments like this.
+ */
+.c-band {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.c-band > :last-child {
+  margin-bottom: 0;
+}
+
+.c-band--small {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.c-band--center {
+  text-align: center;
+}
+
+.c-band--primary {
+  background-color: #4a8ec2;
+}
+.c-band--primary,
+.c-band--primary a {
+  color: #fff;
+}
+
+.c-band--secondary {
+  background-color: #2f4054;
+}
+.c-band--secondary,
+.c-band--secondary a {
+  color: #fff;
+}
+
+/* ==========================================================================
    #PAGE-HEAD
    ========================================================================== */
 .c-page-head {
@@ -1543,51 +1588,6 @@ a:hover, a:focus {
     width: 220px;
     height: 105px;
   }
-}
-
-/* ==========================================================================
-   #BANDS
-   ========================================================================== */
-/**
- * Long-form comment.
- *
- * This spans multiple lines and is also constrained to no longer than 80
- * characters in width.
- *
- * 1. Provide line-comments like this.
- */
-.c-band {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.c-band > :last-child {
-  margin-bottom: 0;
-}
-
-.c-band--small {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.c-band--center {
-  text-align: center;
-}
-
-.c-band--primary {
-  background-color: #4a8ec2;
-}
-.c-band--primary,
-.c-band--primary a {
-  color: #fff;
-}
-
-.c-band--secondary {
-  background-color: #2f4054;
-}
-.c-band--secondary,
-.c-band--secondary a {
-  color: #fff;
 }
 
 /* ==========================================================================
