@@ -1664,12 +1664,25 @@ a:hover, a:focus {
 .c-nav-secondary {
   font-size: 0.75rem;
   line-height: 2;
+  list-style: none;
+  margin-left: 0;
   background-color: #2f4054;
+  font-weight: bold;
 }
 @media (min-width: 45em) {
   .c-nav-secondary {
     font-size: 1rem;
     line-height: 1.5;
+  }
+}
+
+.c-nav-secondary--sub {
+  margin-left: 12px;
+  font-weight: normal;
+}
+@media (min-width: 45em) {
+  .c-nav-secondary--sub {
+    margin-left: 24px;
   }
 }
 

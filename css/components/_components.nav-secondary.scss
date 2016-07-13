@@ -4,10 +4,23 @@
 
 .c-nav-secondary {
   @include font-size(12px);
+  list-style: none;
+  margin-left: 0;
   background-color: color(secondary);
+  font-weight: bold;
 
   @include mq($from: md) {
     @include font-size($inuit-global-font-size);
+  }
+
+}
+
+.c-nav-secondary--sub {
+  margin-left: $unit-small;
+  font-weight: normal;
+
+  @include mq($from: md) {
+    margin-left: $unit;
   }
 
 }
