@@ -1638,12 +1638,13 @@ a:hover, a:focus {
     line-height: 105px;
   }
 }
-.c-nav-primary a {
+
+.c-nav-primary__link {
   display: inline-block;
   transition: 0.333333333s;
 }
 @media (min-width: 45em) {
-  .c-nav-primary a {
+  .c-nav-primary__link {
     border: 1px solid transparent;
     border-radius: 3px;
     line-height: 46px;
@@ -1652,7 +1653,7 @@ a:hover, a:focus {
     text-decoration: none;
   }
 }
-.c-nav-primary a:hover, .c-nav-primary a:focus {
+.c-nav-primary__link:hover, .c-nav-primary__link:focus {
   border-color: currentColor;
 }
 
@@ -1670,10 +1671,6 @@ a:hover, a:focus {
     line-height: 1.5;
   }
 }
-.c-nav-secondary,
-.c-nav-secondary a {
-  color: #fff;
-}
 
 .c-nav-secondary__link {
   display: block;
@@ -1684,6 +1681,9 @@ a:hover, a:focus {
   .c-nav-secondary__link {
     padding: 12px;
   }
+}
+.c-nav-secondary__link, .c-nav-secondary__link:hover, .c-nav-secondary__link:focus {
+  color: #fff;
 }
 
 /* ==========================================================================

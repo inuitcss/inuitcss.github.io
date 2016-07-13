@@ -10,11 +10,6 @@
     @include font-size($inuit-global-font-size);
   }
 
-  &,
-  a {
-    color: color(pale)
-  }
-
 }
 
     .c-nav-secondary__link {
@@ -24,6 +19,12 @@
 
       @include mq($from: md) {
         padding: $unit-small;
+      }
+
+      &,
+      &:hover,
+      &:focus {
+        color: color(pale);
       }
 
     }
