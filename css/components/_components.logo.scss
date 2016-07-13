@@ -8,7 +8,7 @@
   height: 48px;
   background-image: url(/assets/img/sprites/sprite-logo.png);
 
-  @include mq($from: sm) {
+  @include mq($from: md) {
     background-position: -48px 0;
     width:  72px;
     height: 72px;

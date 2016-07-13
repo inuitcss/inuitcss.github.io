@@ -66,7 +66,8 @@
  * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
  * Bio-mini.............Miniature bios as used on the Team page.
- * Nav-secondary........Sidebar-style navigation
+ * Nav-primary..........Site’s main nav.
+ * Nav-secondary........Sidebar-style navigation.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -97,8 +98,8 @@
 $mq-breakpoints: (
   sm: 320px,
   md: 720px,
-  lg: 960px,
-  xl: 1200px
+  lg: 1024px,
+  xl: 1440px
 );
 @import "../node_modules/sass-mq/mq";
 @import "tools/tools.aliases";
@@ -155,6 +156,7 @@ $mq-breakpoints: (
 @import "components/components.bands";
 @import "components/components.avatars";
 @import "components/components.bio-mini";
+@import "components/components.nav-primary";
 @import "components/components.nav-secondary";
 
 

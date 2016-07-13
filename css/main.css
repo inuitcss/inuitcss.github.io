@@ -64,7 +64,8 @@
  * Bands................Horizontal content bands.
  * Avatars..............Suite of different styles of avatar.
  * Bio-mini.............Miniature bios as used on the Team page.
- * Nav-secondary........Sidebar-style navigation
+ * Nav-primary..........Site’s main nav.
+ * Nav-secondary........Sidebar-style navigation.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -1493,14 +1494,14 @@ a:hover, a:focus {
   height: 48px;
   background-image: url(/assets/img/sprites/sprite-logo.png);
 }
-@media (min-width: 20em) {
+@media (min-width: 45em) {
   .c-logo {
     background-position: -48px 0;
     width: 72px;
     height: 72px;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 64em) {
   .c-logo {
     background-position: 0 -72px;
     width: 220px;
@@ -1584,6 +1585,23 @@ a:hover, a:focus {
 .c-bio-mini__title {
   margin-bottom: 0;
   color: #fff;
+}
+
+/* ==========================================================================
+   #NAV-PRIMARY
+   ========================================================================== */
+.c-nav-primary {
+  line-height: 48px;
+}
+@media (min-width: 45em) {
+  .c-nav-primary {
+    line-height: 72px;
+  }
+}
+@media (min-width: 64em) {
+  .c-nav-primary {
+    line-height: 105px;
+  }
 }
 
 /* ==========================================================================
@@ -2402,7 +2420,7 @@ a:hover, a:focus {
     /* [1] */
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 64em) {
   .u-1\/12\@lg {
     width: 8.333333333% !important;
   }
@@ -2655,7 +2673,7 @@ a:hover, a:focus {
     /* [1] */
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 90em) {
   .u-1\/12\@xl {
     width: 8.333333333% !important;
   }
