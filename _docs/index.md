@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Docs"
+title: "Docs"
+group: introduction
 page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
