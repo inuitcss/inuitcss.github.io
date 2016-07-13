@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+//$inuit-font-size-h6:  $inuit-global-font-size * 1.25;
+//$inuit-font-size-h5:  $inuit-font-size-h6 * 1.25;
+//$inuit-font-size-h4:  $inuit-font-size-h5 * 1.25;
+//$inuit-font-size-h3:  $inuit-font-size-h4 * 1.25;
+//$inuit-font-size-h2:  $inuit-font-size-h3 * 1.25;
+//$inuit-font-size-h1:  $inuit-font-size-h2 * 1.25;
+
+$inuit-font-size-h6:  22px;
+$inuit-font-size-h5:  22px;
+$inuit-font-size-h4:  22px;
+$inuit-font-size-h3:  22px;
+$inuit-font-size-h2:  22px;
+$inuit-font-size-h1:  22px;
+
+@import "../../node_modules/inuitcss/elements/elements.headings";
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: 0.033333333em;
+  color: color(secondary);
+}

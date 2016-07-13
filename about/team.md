@@ -4,12 +4,57 @@ title: Team
 has-sub-nav: true
 sub-nav: about
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat.
+<ul class="o-layout">
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer
+  <li class="o-layout__item  u-12/12">
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices ligula eget tempus. Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel massa dapibus non lacinia velit volutpat.
+    <figure class="o-media  c-bio-mini">
+      <img src="/assets/img/avatars/harry-roberts.jpg" alt="" class="o-media__img  c-avatar" />
+      <div class="o-media__body">
+        <h2 class="c-bio-mini__title">Harry Roberts</h2>
+        <strong>Lead Developer, Founder</strong>
+      </div>
+    </figure>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim. Donec pretium est sit amet ipsum fringilla feugiat. Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices ligula eget tempus. Aenean metus purus, iaculis ut imperdiet eget, sodales et massa. Duis pellentesque nisl vel massa dapibus non lacinia velit volutpat. Maecenas accumsan interdum sodales. In hac habitasse platea dictumst. Pellentesque ornare blandit orci, eget
+  <li class="o-layout__item  u-6/12">
+
+    <figure class="o-media  c-bio-mini">
+      <img src="/assets/img/avatars/nenad-jelovac.jpg" alt="" class="o-media__img  c-avatar" />
+      <div class="o-media__body">
+        <h2 class="c-bio-mini__title">Nenad Jelovac</h2>
+        <strong>Core Developer</strong>
+      </div>
+    </figure>
+
+  <li class="o-layout__item  u-6/12">
+
+    <figure class="o-media  c-bio-mini">
+      <img src="/assets/img/avatars/anselm-hannemann.jpg" alt="" class="o-media__img  c-avatar" />
+      <div class="o-media__body">
+        <h2 class="c-bio-mini__title">Anselm Hannemann</h2>
+        <strong>Core Developer</strong>
+      </div>
+    </figure>
+
+  <li class="o-layout__item  u-6/12">
+
+    <figure class="o-media  c-bio-mini">
+      <img src="/assets/img/avatars/dennis-heibult.jpg" alt="" class="o-media__img  c-avatar" />
+      <div class="o-media__body">
+        <h2 class="c-bio-mini__title">Dennis Heibült</h2>
+        <strong>Core Developer</strong>
+      </div>
+    </figure>
+
+  <li class="o-layout__item  u-6/12">
+
+    <figure class="o-media  c-bio-mini">
+      <img src="/assets/img/avatars/florian-Bouvot.jpg" alt="" class="o-media__img  c-avatar" />
+      <div class="o-media__body">
+        <h2 class="c-bio-mini__title">Florian Bouvot</h2>
+        <strong>Core Developer</strong>
+      </div>
+    </figure>
+
+</ul>

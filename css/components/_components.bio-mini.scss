@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #BIO-MINI
+   ========================================================================== */
+
+.c-bio-mini {
+  padding: $unit;
+  background-color: color(primary);
+  //border-radius: $inuit-global-radius;
+  color: color(pale);
+}
+
+  .c-bio-mini__title {
+    margin-bottom: 0;
+    color: color(pale);
+  }
