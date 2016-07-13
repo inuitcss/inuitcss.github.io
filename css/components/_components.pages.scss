@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #PAGES
+   ========================================================================== */
+
+@each $page-type in home, about, docs, blog {
+
+  .c-page--#{$page-type} .c-page__#{$page-type} {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: underline;
+
+    @include mq($from: md) {
+      border-color: currentColor;
+      text-decoration: none;
+    }
+
+  }
+
+}

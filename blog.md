@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+page-class: c-page--blog
 ---
 
 <ul>

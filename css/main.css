@@ -58,7 +58,8 @@
  *
  * COMPONENTS
  * Buttons..............inuitcss-branded buttons.
- * Page-head............Site’s main mage header.
+ * Page-head............Site’s main page header.
+ * Page-foot............Site’s main page footer.
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
@@ -66,6 +67,9 @@
  * Bio-mini.............Miniature bios as used on the Team page.
  * Nav-primary..........Site’s main nav.
  * Nav-secondary........Sidebar-style navigation.
+ * Nav-tertiary.........Footer-style navigation.
+ * Pages................Page-level components.
+ * Code.................Styled-up pieces of code.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -577,9 +581,12 @@ html {
 
 /**
  * 1. Use the system font everywhere.
+ * 2. Nicer looking strokes.
  */
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  /* [2] */
 }
 
 /* ==========================================================================
@@ -1463,6 +1470,34 @@ a:hover, a:focus {
 }
 
 /* ==========================================================================
+   #PAGE-FOOT
+   ========================================================================== */
+.c-page-foot {
+  padding-bottom: 0;
+}
+.c-page-foot a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.c-page-foot a:hover, .c-page-foot a:focus {
+  color: #70a6cf;
+}
+
+.c-page-foot__region {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.c-page-foot__heading {
+  font-size: 0.875rem;
+  line-height: 1.714285714;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 1px solid #415975;
+  margin-bottom: 11px;
+}
+
+/* ==========================================================================
    #LOCKUP
    ========================================================================== */
 .c-lockup {
@@ -1603,6 +1638,23 @@ a:hover, a:focus {
     line-height: 105px;
   }
 }
+.c-nav-primary a {
+  display: inline-block;
+  transition: 0.333333333s;
+}
+@media (min-width: 45em) {
+  .c-nav-primary a {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    line-height: 46px;
+    padding-right: 22px;
+    padding-left: 22px;
+    text-decoration: none;
+  }
+}
+.c-nav-primary a:hover, .c-nav-primary a:focus {
+  border-color: currentColor;
+}
 
 /* ==========================================================================
    #NAV-SECONDARY
@@ -1631,6 +1683,75 @@ a:hover, a:focus {
 @media (min-width: 45em) {
   .c-nav-secondary__link {
     padding: 12px;
+  }
+}
+
+/* ==========================================================================
+   #NAV-TERTIARY
+   ========================================================================== */
+.c-nav-tertiary {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* ==========================================================================
+   #PAGES
+   ========================================================================== */
+.c-page--home .c-page__home {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: underline;
+}
+@media (min-width: 45em) {
+  .c-page--home .c-page__home {
+    border-color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.c-page--about .c-page__about {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: underline;
+}
+@media (min-width: 45em) {
+  .c-page--about .c-page__about {
+    border-color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.c-page--docs .c-page__docs {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: underline;
+}
+@media (min-width: 45em) {
+  .c-page--docs .c-page__docs {
+    border-color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.c-page--blog .c-page__blog {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: underline;
+}
+@media (min-width: 45em) {
+  .c-page--blog .c-page__blog {
+    border-color: currentColor;
+    text-decoration: none;
+  }
+}
+
+/* ==========================================================================
+   #CODE
+   ========================================================================== */
+@media (min-width: 45em) {
+  .c-code-cta {
+    font-size: 1.5rem;
+    line-height: 1;
   }
 }
 
@@ -3437,6 +3558,24 @@ a:hover, a:focus {
 
 .u-color-grey-dark-border {
   border-color: #424242 !important;
+}
+
+.c-title-huge {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 200;
+}
+@media (min-width: 20em) {
+  .c-title-huge {
+    font-size: 7.5vw;
+  }
+}
+@media (min-width: 60em) {
+  .c-title-huge {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 100;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

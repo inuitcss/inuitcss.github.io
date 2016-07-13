@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+page-class: c-page--about
 has-sub-nav: true
 sub-nav: about
 ---

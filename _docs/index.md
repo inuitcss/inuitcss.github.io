@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Docs"
+page-class: c-page--docs
 has-sub-nav: true
 sub-nav: docs
 permalink: /docs/

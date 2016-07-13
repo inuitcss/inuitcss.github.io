@@ -60,7 +60,8 @@
  *
  * COMPONENTS
  * Buttons..............inuitcss-branded buttons.
- * Page-head............Site’s main mage header.
+ * Page-head............Site’s main page header.
+ * Page-foot............Site’s main page footer.
  * Lock-up..............The logo contained in the site’s header.
  * Logo.................inuitcss logo sprite.
  * Bands................Horizontal content bands.
@@ -68,6 +69,9 @@
  * Bio-mini.............Miniature bios as used on the Team page.
  * Nav-primary..........Site’s main nav.
  * Nav-secondary........Sidebar-style navigation.
+ * Nav-tertiary.........Footer-style navigation.
+ * Pages................Page-level components.
+ * Code.................Styled-up pieces of code.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -151,6 +155,7 @@ $mq-breakpoints: (
 // Build and include your project’s UI Compoments here.
 @import "components/components.buttons";
 @import "components/components.page-head";
+@import "components/components.page-foot";
 @import "components/components.lockup";
 @import "components/components.logo";
 @import "components/components.bands";
@@ -158,6 +163,9 @@ $mq-breakpoints: (
 @import "components/components.bio-mini";
 @import "components/components.nav-primary";
 @import "components/components.nav-secondary";
+@import "components/components.nav-tertiary";
+@import "components/components.pages";
+@import "components/components.code";
 
 
 
@@ -171,3 +179,18 @@ $mq-breakpoints: (
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.colors";
+
+.c-title-huge {
+  @include font-size(24px);
+  font-weight: 200;
+
+  @include mq($from: sm) {
+    font-size: 7.5vw;
+  }
+
+  @include mq($from: 960px) {
+    @include font-size(72px);
+    font-weight: 100;
+  }
+
+}

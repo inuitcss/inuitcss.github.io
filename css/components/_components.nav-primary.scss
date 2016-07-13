@@ -13,4 +13,27 @@
     line-height: 105px;
   }
 
+  a {
+
+    display: inline-block;
+    transition: $inuit-global-transition;
+
+    @include mq($from: md) {
+      $border-width: 1px;
+
+      border: $border-width solid transparent;
+      border-radius: $inuit-global-radius;
+      line-height:   $unit-large - (2 * $border-width);
+      padding-right: $unit       - (2 * $border-width);
+      padding-left:  $unit       - (2 * $border-width);
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: currentColor;
+    }
+
+  }
+
 }

@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #PAGE-FOOT
+   ========================================================================== */
+
+.c-page-foot {
+  padding-bottom: 0;
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      color: color(primary-highlight);
+    }
+
+  }
+
+}
+
+  .c-page-foot__region {
+    @include font-size(12px);
+  }
+
+  .c-page-foot__heading {
+    @include font-size(14px);
+    font-weight: bold;
+    color: color(pale);
+    border-bottom: 1px solid color(secondary-highlight);
+    margin-bottom: $unit-small - 1px;
+  }
