@@ -1698,49 +1698,13 @@ a:hover, a:focus {
 /* ==========================================================================
    #PAGES
    ========================================================================== */
-.c-page--home .c-page__home {
+.c-page--home .c-page__home, .c-page--about .c-page__about, .c-page--docs .c-page__docs, .c-page--blog .c-page__blog {
   cursor: default;
   pointer-events: none;
   text-decoration: underline;
 }
 @media (min-width: 45em) {
-  .c-page--home .c-page__home {
-    border-color: currentColor;
-    text-decoration: none;
-  }
-}
-
-.c-page--about .c-page__about {
-  cursor: default;
-  pointer-events: none;
-  text-decoration: underline;
-}
-@media (min-width: 45em) {
-  .c-page--about .c-page__about {
-    border-color: currentColor;
-    text-decoration: none;
-  }
-}
-
-.c-page--docs .c-page__docs {
-  cursor: default;
-  pointer-events: none;
-  text-decoration: underline;
-}
-@media (min-width: 45em) {
-  .c-page--docs .c-page__docs {
-    border-color: currentColor;
-    text-decoration: none;
-  }
-}
-
-.c-page--blog .c-page__blog {
-  cursor: default;
-  pointer-events: none;
-  text-decoration: underline;
-}
-@media (min-width: 45em) {
-  .c-page--blog .c-page__blog {
+  .c-page--home .c-page__home, .c-page--about .c-page__about, .c-page--docs .c-page__docs, .c-page--blog .c-page__blog {
     border-color: currentColor;
     text-decoration: none;
   }
