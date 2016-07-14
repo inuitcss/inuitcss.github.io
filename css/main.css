@@ -43,6 +43,7 @@
  * Images...............Base image styles.
  * Tables...............Simple table styles.
  * Links................Basic hyperlink styles.
+ * Code.................Code examples and blocks.
  *
  * OBJECTS
  * Wrapper..............Page constraint object.
@@ -687,6 +688,22 @@ a {
 a:hover, a:focus {
   color: #3774a2;
   text-decoration: underline;
+}
+
+/* ==========================================================================
+   #CODE
+   ========================================================================== */
+code, kbd, samp {
+  color: #4a8ec2;
+}
+pre code, pre kbd, pre samp {
+  color: #fff;
+}
+
+pre {
+  background-color: #424242;
+  padding: 24px;
+  border-radius: 3px;
 }
 
 /* ==========================================================================
@@ -1726,6 +1743,9 @@ a:hover, a:focus {
 /* ==========================================================================
    #CODE
    ========================================================================== */
+.c-code-cta {
+  color: #fff;
+}
 @media (min-width: 45em) {
   .c-code-cta {
     font-size: 1.5rem;

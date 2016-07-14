@@ -13,10 +13,18 @@ page-class: c-page--home
 </div>
 
 <div class="c-band  c-band--center  c-band--secondary  u-margin-bottom">
-  <pre><code class="c-code-cta">$ npm install --save inuitcss</code></pre>
+  <code class="c-code-cta">$ npm install --save inuitcss</code>
 </div>
 
 <main class="o-wrapper">
+<ul>
+  {% assign items = site.test | sort: 'id' %}
+  {% for item in items %}
+    <li>
+      <a href="{{ item.url  }}">{{ item.num  }} – {{ item.title  }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
   <h1><a href="/">Home</a></h1>
 

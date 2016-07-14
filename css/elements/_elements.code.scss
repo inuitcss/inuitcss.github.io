@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #CODE
+   ========================================================================== */
+
+code, kbd, samp {
+  color: color(primary);
+
+  pre & {
+    color: color(pale);
+  }
+
+}
+
+pre {
+  background-color: color(grey-dark);
+  padding: $unit;
+  border-radius: $inuit-global-radius;
+}

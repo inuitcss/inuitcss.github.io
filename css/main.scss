@@ -45,6 +45,7 @@
  * Images...............Base image styles.
  * Tables...............Simple table styles.
  * Links................Basic hyperlink styles.
+ * Code.................Code examples and blocks.
  *
  * OBJECTS
  * Wrapper..............Page constraint object.
@@ -128,6 +129,7 @@ $mq-breakpoints: (
 @import "../node_modules/inuitcss/elements/elements.images";
 @import "../node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.links";
+@import "elements/elements.code";
 
 
 

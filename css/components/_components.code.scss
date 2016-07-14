@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .c-code-cta {
+  color: color(pale);
 
   @include mq($from: md) {
     @include font-size(24px);
