@@ -21,3 +21,6 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
+  demo:
+    output: true
+    permalink: /:collection/:path/
