@@ -18,7 +18,7 @@ page-class: c-page--home
 
 <main class="o-wrapper">
 <ul>
-  {% assign items = site.test | sort: 'id' %}
+  {% assign items = site.test %}
   {% for item in items %}
     <li>
       <a href="{{ item.url  }}">{{ item.num  }} – {{ item.title  }}</a>
