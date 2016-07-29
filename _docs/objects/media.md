@@ -13,4 +13,4 @@ dummy: "_"
 
 The media object
 
-<iframe src="/demo/media/index.html" frameborder="0"></iframe>
+<iframe src="/demo/media/index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
