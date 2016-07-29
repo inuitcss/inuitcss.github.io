@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #DEMO
+   ========================================================================== */
+
+$demo-border-width: 2px;
+$demo-border-color: color(primary-highlight);
+
+.c-demo {
+  padding: $unit;
+  border: $demo-border-width solid $demo-border-color;
+}
