@@ -9,8 +9,8 @@ url: "http://inuitcss.com" # the base hostname & protocol for your site
 
 # Project info
 github: "https://github.com/inuitcss/inuitcss"
-version: 6.0.0-beta.1
-commit: 4254854fdffeab04f4c874c923e81c55ebc5eb59
+version: 6.0.0-beta.4
+commit: 126bebe2ff2146b7101ef28fb1b2c0c4832261dc
 
 # Build settings
 markdown: kramdown
