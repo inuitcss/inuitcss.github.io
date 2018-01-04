@@ -4,13 +4,13 @@ email: csswizardry@gmail.com
 description: >
   Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting
   UI projects.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://inuitcss.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://inuitcss.com"
 
 # Project info
 github: "https://github.com/inuitcss/inuitcss"
-version: 6.0.0-beta.4
-commit: 126bebe2ff2146b7101ef28fb1b2c0c4832261dc
+version: 6.0.0-beta.5
+commit: d84cb4762c945714f4440af6a3db48bce85a4cf6
 
 # Build settings
 markdown: kramdown
