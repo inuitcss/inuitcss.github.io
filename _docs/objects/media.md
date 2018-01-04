@@ -18,6 +18,10 @@ classes: [
 ]
 ---
 
+[DEPENDENCIES?]
+
+[VARS?]
+
 {% include file-info.html %}
 
 {% include class-list.html %}
