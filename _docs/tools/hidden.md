@@ -10,4 +10,10 @@ filename: "_tools.hidden.scss"
 
 {% include file-info.html %}
 
-Mixin to hide elements accessibility-friendly
+Mixin to quickly apply accessible hiding to elements.
+
+## Mixins
+
+    .usage {
+      @include inuit-hidden-visually();
+    }
