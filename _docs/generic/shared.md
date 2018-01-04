@@ -10,4 +10,4 @@ filename: "_generic.shared.scss"
 
 {% include file-info.html %}
 
-Shared
+This file contains some high-level generic styles that are “shared” between several elements.

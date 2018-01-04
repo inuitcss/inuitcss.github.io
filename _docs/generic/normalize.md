@@ -10,4 +10,4 @@ filename: "_generic.normalize.scss"
 
 {% include file-info.html %}
 
-[Normalize.css](https://necolas.github.io/normalize.css/)
+We are using [Normalize.css](https://necolas.github.io/normalize.css/) as CSS reset library.

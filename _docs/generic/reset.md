@@ -10,4 +10,4 @@ filename: "_generic.reset.scss"
 
 {% include file-info.html %}
 
-Reset
+On top of Normalize.css we add a bit of our own, slightly opinionated reset styles.
