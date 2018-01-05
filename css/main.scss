@@ -2,32 +2,25 @@
    INUITCSS
    ========================================================================== */
 
-/*!*
+/**
  * inuitcss, by @csswizardry
  *
  * github.com/inuitcss | inuitcss.com
  */
 
 /**
- * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
- * Instead, copy and paste it into your own CSS directory and make additions,
- * extension, and modifications there.
- */
-
-/**
  * CONTENTS
  *
  * SETTINGS
- * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
  * Global...............Globally-available project settings.
  * Colors...............Our own colour settings and mappings.
  *
  * TOOLS
- * Functions............A small collection of useful functions.
- * Mixins...............Globally-available mixins.
- * Widths...............A mixin to quickly generate an arbitrary number of width
- *                      classes for use alongside our grid system.
- * Sass MQ..............Neat little wrapper for media queries.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
  * Aliases..............Create shorter aliases for inuitcss’ default settings.
  *
  * GENERIC
@@ -46,18 +39,22 @@
  * Tables...............Simple table styles.
  * Links................Basic hyperlink styles.
  * Code.................Code examples and blocks.
+ * iFrame...............Basic `<iframe>` styles.
  *
  * OBJECTS
  * Wrapper..............Page constraint object.
  * Layout...............Generic layout module.
  * Media................Image- and text-like content side by side. The
  *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
  * List-bare............Lists with no bullets or indents.
  * List-inline..........A list whose items all site in a line.
  * Box..................Simple boxing abstraction.
  * Block................Image-on-top-of-text object.
  * Ratio................A container for maintaining aspect ratio of content.
  * Crop.................Provide a cropping context for media (images, etc.).
+ * Table................Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
  *
  * COMPONENTS
  * Buttons..............inuitcss-branded buttons.
@@ -73,22 +70,24 @@
  * Nav-tertiary.........Footer-style navigation.
  * Pages................Page-level components.
  * Code.................Styled-up pieces of code.
+ * Demo.................Demo container to showcase inuitcss’ modules.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
  * Widths...............Simple width helper classes.
  * Headings.............Reassigning our heading styles to helper classes.
- * Spacing..............Nudge bits of the DOM around with these spacing
+ * Spacings.............Nudge bits of the DOM around with these spacing
  *                      classes.
+ * Responsive-Spacings..Enhances the function of normal spacings for
+ *                      responsive usage.
  * Print................Reset-like styles taken from the HTML5 Boilerplate.
- *                      classes..
  * Hide.................Helper classes to hide content
  * Colors...............Our colour palette against some utility classes.
  */
 
 // SETTINGS
-@import "../node_modules/inuitcss/settings/example.settings.config";
-@import "../node_modules/inuitcss/settings/settings.global";
+@import "../node_modules/inuitcss/settings/settings.core";
+@import "settings/settings.global";
 @import "settings/settings.colors";
 
 
@@ -96,9 +95,9 @@
 
 
 // TOOLS
-@import "../node_modules/inuitcss/tools/tools.functions";
-@import "../node_modules/inuitcss/tools/tools.mixins";
-@import "../node_modules/inuitcss/tools/tools.widths";
+@import "../node_modules/inuitcss/tools/tools.font-size";
+@import "../node_modules/inuitcss/tools/tools.clearfix";
+@import "../node_modules/inuitcss/tools/tools.hidden";
 
 $mq-breakpoints: (
   sm: 320px,
@@ -137,31 +136,31 @@ $mq-breakpoints: (
 
 
 // OBJECTS
-//
-// Uncomment and add to this section as necessary.
 @import "../node_modules/inuitcss/objects/objects.wrapper";
 @import "../node_modules/inuitcss/objects/objects.layout";
 @import "../node_modules/inuitcss/objects/objects.media";
+@import "../node_modules/inuitcss/objects/objects.flag";
 @import "../node_modules/inuitcss/objects/objects.list-bare";
 @import "../node_modules/inuitcss/objects/objects.list-inline";
 @import "../node_modules/inuitcss/objects/objects.box";
 @import "../node_modules/inuitcss/objects/objects.block";
 @import "../node_modules/inuitcss/objects/objects.ratio";
 @import "../node_modules/inuitcss/objects/objects.crop";
+@import "../node_modules/inuitcss/objects/objects.table";
+@import "../node_modules/inuitcss/objects/objects.pack";
 
 
 
 
 
 // COMPONENTS
-//
-// Build and include your project’s UI Compoments here.
 @import "components/components.buttons";
 @import "components/components.bands";
 @import "components/components.page-head";
 @import "components/components.page-foot";
 @import "components/components.lockup";
 @import "components/components.logo";
+@import "components/components.title-huge";
 @import "components/components.avatars";
 @import "components/components.bio-mini";
 @import "components/components.nav-primary";
@@ -177,24 +176,12 @@ $mq-breakpoints: (
 
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.clearfix";
-@import "utilities/utilities.widths";
+
+$inuit-fractions: 1 2 3 4 5 12 !default;
+@import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
-@import "../node_modules/inuitcss/utilities/utilities.spacing";
+@import "../node_modules/inuitcss/utilities/utilities.spacings";
+@import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
 @import "../node_modules/inuitcss/utilities/utilities.print";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.colors";
-
-.c-title-huge {
-  @include font-size(24px);
-  font-weight: 200;
-
-  @include mq($from: sm) {
-    font-size: 7.5vw;
-  }
-
-  @include mq($from: 960px) {
-    @include font-size(72px);
-    font-weight: 100;
-  }
-
-}

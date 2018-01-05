@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #TITLE-HUGE
+   ========================================================================== */
+
+.c-title-huge {
+  @include font-size(24px);
+  font-weight: 200;
+
+  @include mq($from: sm) {
+    font-size: 7.5vw;
+  }
+
+  @include mq($from: 960px) {
+    @include font-size(72px);
+    font-weight: 100;
+  }
+
+}
