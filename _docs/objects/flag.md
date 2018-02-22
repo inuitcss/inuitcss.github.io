@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.flag.scss"
+requirement: optional
 demo: "flag"
 classes: [
     "o-flag",

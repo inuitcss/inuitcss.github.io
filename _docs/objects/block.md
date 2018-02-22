@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.block.scss"
+requirement: optional
 demo: "block"
 classes: [
     "o-block",

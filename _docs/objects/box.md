@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.box.scss"
+requirement: optional
 demo: "box"
 classes: [
     "o-box",

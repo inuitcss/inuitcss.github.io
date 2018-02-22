@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.crop.scss"
+requirement: optional
 demo: "crop"
 classes: [
     "o-crop",

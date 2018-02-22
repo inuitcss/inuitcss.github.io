@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.list-inline.scss"
+requirement: optional
 demo: "list-inline"
 classes: [
     "o-list-inline",

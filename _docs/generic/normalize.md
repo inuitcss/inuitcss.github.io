@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_generic.normalize.scss"
+requirement: recommended
 ---
 
 {% include file-info.html %}

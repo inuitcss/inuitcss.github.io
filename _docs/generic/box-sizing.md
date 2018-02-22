@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_generic.box-sizing.scss"
+requirement: required
 ---
 
 {% include file-info.html %}

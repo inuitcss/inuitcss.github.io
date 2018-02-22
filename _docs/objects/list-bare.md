@@ -6,6 +6,7 @@ page-class: c-page--docs
 has-sub-content: true
 sub-content: docs
 filename: "_objects.list-bare.scss"
+requirement: optional
 demo: "list-bare"
 classes: [
     "o-list-bare"

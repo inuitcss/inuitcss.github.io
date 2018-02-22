@@ -7,6 +7,7 @@ has-sub-content: true
 sub-content: docs
 filename: "_settings.core.scss"
 permalink: /docs/settings/core/
+requirement: required
 ---
 
 {% include file-info.html %}
