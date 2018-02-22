@@ -11,4 +11,4 @@ requirement: optional
 
 {% include file-info.html %}
 
-Tables
+This partial does exactly one thing: Setting the default width of `<table>`s to 100%.
