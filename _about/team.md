@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Team
+category: "about"
 ---
 
 <ul class="o-layout">

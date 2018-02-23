@@ -18,6 +18,9 @@ permalink: pretty
 
 # Collections
 collections:
+  about:
+    output: true
+    permalink: /:collection/:path/
   docs:
     output: true
     permalink: /:collection/:path/
