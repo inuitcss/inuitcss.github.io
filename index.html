@@ -1,81 +1,29 @@
 ---
 layout: default
-page-class: c-page--home
 ---
 
-
 <div class="c-band  c-band--center  c-band--primary">
-
   <div class="o-wrapper">
     <h1 class="c-title-huge  will-grow  u-margin-bottom-none  u-color-pale">{{ site.description }}</h1>
   </div>
-
 </div>
 
 <div class="c-band  c-band--center  c-band--secondary  u-margin-bottom">
   <code class="c-code-cta">$ npm install --save inuitcss</code>
 </div>
 
+
+
 <main class="o-wrapper">
-
-  <h1><a href="/">Home</a></h1>
-
-
-
-
-
-  <hr />
-
-
-
-
-
-  <h2><a href="/about/">About</a></h2>
-
-  <ul>
-    <li>
-      <a href="/about/team/">Team</a>
-    </li>
-  </ul>
-
-
-
-
-
-  <hr />
-
-
-
-
-
   <h2><a href="/docs/">Docs</a></h2>
-  <ul>
-    {% for doc in site.docs %}
-      <li>
-        <a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-
-
-
-
-  <hr />
-
-
-
-
 
   <h2>Blog</h2>
-  <ul>
+  <ul class="o-list-bare">
     {% for post in site.posts %}
       <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span>({{ post.date | date: "%b %-d, %Y" }})</span>
       </li>
     {% endfor %}
   </ul>
-
 </main>

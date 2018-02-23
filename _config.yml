@@ -24,3 +24,10 @@ collections:
   demo:
     output: true
     permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: page

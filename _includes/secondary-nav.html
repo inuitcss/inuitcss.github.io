@@ -1,0 +1,20 @@
+<ul class="c-nav-secondary">
+
+  {% assign categories = site.docs | where: "order", 1 %}
+  {% for category in categories %}
+    <li class="c-nav-secondary__item">
+      {% assign docs = site.docs | where: "group", category.group | sort: "order" %}
+      {% for doc in docs %}
+        {% if doc.order == 1 %}
+          <a href="{{ doc.url | prepend: site.baseurl }}" class="c-nav-secondary__link">{{ doc.group }}</a>
+        {% endif %}
+        <ul class="c-nav-secondary  c-nav-secondary--sub">
+          <li class="c-nav-secondary__item">
+            <a class="c-nav-secondary__link" href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a>
+          </li>
+        </ul>
+      {% endfor %}
+    </li>
+  {% endfor %}
+
+</ul>

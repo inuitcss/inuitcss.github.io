@@ -1,0 +1,10 @@
+<h2>{{ include.variant }}</h2>
+
+<iframe class="c-demo  u-margin-bottom" src="/demo/{{ include.variant }}" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+{% assign patterns = site.demo | where: "handle", include.variant %}
+{% for demo in patterns %}
+  <div>
+    {% highlight html %}{{ demo.content }}{% endhighlight %}
+  </div>
+{% endfor %}
